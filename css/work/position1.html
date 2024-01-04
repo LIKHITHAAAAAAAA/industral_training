@@ -1,0 +1,230 @@
+<html>
+    <head>
+        <title>positions</title>
+        <style>
+            .a{
+                height: 400px;
+                width: 1000px;
+                outline:2px solid blueviolet;
+            }
+            .b{
+                height: 300px;
+                width: 1000px;
+                outline:2px solid blueviolet;
+            }
+            .c{
+                height:400px;
+                width:250px;
+                float:left;
+                outline:1px solid blueviolet;
+                text-align: center;
+            }    
+            .d{
+                height:300px;
+                width:200px;
+                outline:1px solid brown;
+                margin:20px;
+            }
+            .a1{
+                height:100px;
+                width:100px;
+                outline:1px solid blue;
+                background-color: dodgerblue;
+            }
+            .a2{
+                height:100px;
+                width:100px;
+                outline:1px solid green;
+                background-color: green;
+                position:static;
+                text-align: center;
+            }
+            .a3{
+                height:100px;
+                width:100px;
+                outline:1px solid green;
+                background-color: green;
+                position:relative;
+                top:30px;
+                left:30px;
+            }
+            .a4{
+                height:100px;
+                width:100px;
+                outline:1px solid blue;
+                background-color: dodgerblue;
+                position:relative;
+                text-align: center;
+            }
+            .a5{
+                height:100px;
+                width:100px;
+                outline:1px solid green;
+                background-color: green;
+                text-align: center;
+                position:absolute;
+            }
+            .a6{
+                height:100px;
+                width:100px;
+                outline:1px solid blue;
+                background-color: dodgerblue;
+                position:relative;
+                bottom:100px;
+            }
+            .a7{
+                height:100px;
+                width:100px;
+                outline:1px solid green;
+                background-color:green;
+                position:fixed;
+                top:0px;
+                right:0px;
+            }
+            .b1{
+                height:200px;
+                width:200px;
+                outline:1px solid brown;
+                margin:20px;
+                overflow-y:scroll;
+            }
+            .b2{
+                height:130px;
+                width:130px;
+                outline:1px solid green;
+                background-color:green;
+                position:sticky;
+                top:0px;
+            }
+            .b3{
+                height:130px;
+                width:130px;
+                outline:1px solid green;
+                background-color:green;
+                position:sticky;
+                bottom:0px;
+            }
+            .b4{
+                height:130px;
+                width:130px;
+                outline:1px solid green;
+                background-color:green;
+                float:left;
+                position:sticky;
+                left:0px;
+            }
+            .b5{
+                height:130px;
+                width:130px;
+                outline:1px solid green;
+                background-color:green;
+                float:left;
+                position:sticky;
+                right:0px;
+            }
+            .b6{
+                height:200px;
+                width:200px;
+                outline:1px solid brown;
+                margin:20px;
+                overflow-x:scroll;
+            }
+            .b7{
+                height:130px;
+                width:130px;
+                outline:1px solid blue;
+                background-color: dodgerblue;
+                position:relative;
+            }
+            .b71{
+                height:130px;
+                width:130px;
+                outline:1px solid blue;
+                background-color: dodgerblue;
+                float:left;
+                position:relative;
+            }
+            .b61{
+                height:200;
+                width:390;
+                background-color: aliceblue;
+            }
+            .parent{
+                height:100px;
+                width:100px;
+                outline:1px solid green;
+                background-color: green;
+                position:relative;
+                left:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">
+            <div class="c"><h4>position: static</h4>
+                <div class="d">
+                    <div class="a1"></div>
+                    <div class="a2"><br><br>static</div>
+                    <div class="a1"></div>
+                </div>
+            </div>
+            <div class="c"><h4>position: relative</h4>
+                <div class="d">
+                    <div class="a1"></div>
+                    <div class="a3"><br><br>relative</div>
+                    <div class="a4"></div>
+                </div>
+            </div>
+            <div class="c"><h4>position: absolute</h4>
+                <div class="d">
+                    <div class="a1"></div>
+                    <div class="parent">
+                        <div class="a5"><br><br>absolute</div>
+                    </div>
+                    <div class="a6"></div>
+                </div>
+            </div>
+            <div class="c"><h4>position: fixed</h4>
+                <div class="d">
+                    <div class="a1"></div>
+                    <div class="a7"><br><br>fixed</div>
+                    <div class="a1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="a">
+            <div class="c"><h4>position: sticky(top)</h4>
+                <div class="b1">
+                    <div class="b2"><br><br>sticky(top)</div>
+                    <div class="b7"></div>
+                    <div class="b7"></div>
+                </div>
+            </div>
+            <div class="c"><h4>position: sticky(bottom)</h4>
+                <div class="b1">
+                    <div class="b7"></div>
+                    <div class="b3"><br><br> sticky(bottom)</div>
+                    <div class="b7"></div>
+                </div>
+            </div>
+            <div class="c"><h4>position: sticky(left)</h4>
+                <div class="b6">
+                    <div class="b61">
+                        <div class="b71"></div>
+                        <div class="b4"><br><br> sticky(left)</div>
+                        <div class="b71"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="c"><h4>position: sticky(right)</h4>
+                <div class="b6">
+                    <div class="b61">
+                        <div class="b71"></div>
+                        <div class="b5"><br><br> sticky(right)</div>
+                        <div class="b71"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

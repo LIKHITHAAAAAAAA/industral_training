@@ -1,0 +1,114 @@
+.main{
+    height:600;width:600;background-color: brown;
+}
+.a{
+    height:600;width:100;background-color:coral;float:left;
+}
+.a1{
+    height:100;width:100;background-color: blue;
+}
+.a2{
+    height:300;width:100;background-color:deeppink;
+}
+.a3{
+    height:200;width:100;background-color:red;
+}
+.a31{
+    height:200;width:50;background-color:aqua;float:left;
+}
+.a32{
+    height:200;width:50;background-color:blueviolet;float:right;
+}
+.b{
+    height:600;width:500;background-color:darkorange;float:right;
+}
+.b1{
+    height:100;width:500;background-color:bisque;
+}
+.b2{
+    height:100;width:400;background-color:blueviolet;float:left;
+}
+.b3{
+    height:100;width:100;background-color:blue;float:right;
+}
+.b31{
+    height:50;width:100;background-color:green;
+}
+.b32{
+    height:50;width:100;background-color: yellow;
+}
+.b321{
+    height:50;width:50;background-color:maroon;float:left;
+}
+.b322{
+    height:50;width:50;background-color:darkorchid;float:right;
+}
+.c{
+    height:500;width:500;background-color:cyan;
+}
+.c1{
+    height:100;width:500;background-color:yellow;
+}
+.c2{
+    height:400;width:500;background-color:darkorange;
+}
+.c21{
+    height:400;width:100;background-color: brown;float:left;
+}
+.c211{
+    height:200;width:100;background-color:darkmagenta;
+}
+.c2111{
+    height:200;width:50;background-color:orange;float:left;
+}
+.c2112{
+    height:200;width:50;background-color:darkgreen;float:right;
+}
+.c212{
+    height:200;width:100;background-color:gold;
+}
+.d{
+    height:400;width:100;background-color: blue;float:left;
+}
+.d1{
+    height:400;width:300;background-color: green;float:right;
+}
+.d12{
+    height:100;width:300;background-color: brown;
+}
+.d13{
+    height:300;width:300;background-color:bisque;
+}
+.d131{
+    height:300;width:100;background-color:chartreuse;float:left;
+}
+.d1311{
+    height:100;width:100;background-color:aqua;
+}
+.d1312{
+    height:200;width:100;background-color:cornflowerblue;
+}
+.d13121{
+    height:200;width:50;background-color:gold;float:left;
+}
+.d13122{
+    height:200;width:50;background-color:blue;float:right;
+}
+.e{
+    height:300;width:100;background-color:fuchsia;float:left;
+}
+.e1{
+    height:300;width:100;background-color:goldenrod;float:right;
+}
+.e11{
+    height:100;width:100;background-color:gold;float:left;
+}
+.e12{
+    height:200;width:100;background-color:blue;float:right;
+}
+.e121{
+    height:200;width:50;background-color:dodgerblue;float:left;
+}
+.e122{
+    height:200;width:50;background-color:lightcoral;float:right;
+}
