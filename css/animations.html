@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>animations in css</title>
+        <style>
+            #a{
+                height: 200px;
+                width: 200px;
+                background-color: gray;
+                border: 1px solid blue;
+                border-radius: 100px;
+                animation-name: example;
+                animation-duration: 5s;
+                margin: 20px;
+                float: left;
+            }
+            @keyframes example{
+                from{
+                    background-color: cornflowerblue;
+                }
+                to{
+                    background-color: deeppink;
+                }
+            }
+            #b{
+                height: 200px;
+                width: 200px;
+                background-color: gray;
+                border: 1px solid blue;
+                border-radius: 100px;
+                margin: 20px;
+                position: relative;
+                float: left;
+                animation-name: example1;
+                animation-duration: 3s;
+                animation-iteration-count: 3;
+                animation-delay: 2s;
+                animation-direction: reverse;
+                animation-fill-mode: backwards;
+                /*animation: example1 3s 3 reverse 2s;*/
+            }
+            @keyframes example1{
+                0%{
+                    background-color:cornflowerblue;top:0;left:0;
+                }
+                25%{
+                    background-color:deeppink;top:0;left:500;
+                }
+                50%{
+                    background-color: gray;top:100;left:500;
+                }
+                75%{
+                    background-color: blue;top:100;left:0;
+                }
+                100%{
+                    background-color:aquamarine;top:0;left:0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Animations in CSS</h1>
+        <hr>
+        <div id="a"></div>
+        <div id="b"></div>
+    </body>
+</html>
