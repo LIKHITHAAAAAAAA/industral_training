@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediatask</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .h{
+            text-align: center;
+        }
+        #a{
+            height: 350px;
+            width: 250px;
+            background-color: cornflowerblue;
+            float:left;
+            border:1px solid blue;
+        }
+        #a:hover{
+            transform:translate(40px, 80px);
+        }
+        #a1{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(195, 110, 155);
+            float:left;
+            border:1px solid blue;
+        }
+        #a1:hover{
+            transform:translatex(40px);
+        }
+        #a2{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(197, 103, 197);
+            float:left;
+            border:1px solid blue;
+        }
+        #a2:hover{
+            transform:translatey(40px);
+        }
+        #b{
+            height: 350px;
+            width: 250px;
+            background-color:aqua;
+            float:left;
+            border:1px solid blue;
+        }
+        #b:hover{
+            transform:rotate(60deg);
+        }
+        #b1{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(67, 162, 64);
+            float:left;
+            border:1px solid blue;
+        }
+        #b1:hover{
+            transform:rotatex(40deg);
+        }
+        #b2{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(197, 103, 197);
+            float:left;
+            border:1px solid blue;
+        }
+        #b2:hover{
+            transform:rotatey(40deg);
+        }
+        #c{
+            height: 350px;
+            width: 250px;
+            background-color:aquamarine;
+            float:left;
+            border:1px solid blue;
+        }
+        #c:hover{
+            transform:scale(2,3);
+        }
+        #c1{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(64, 112, 224);
+            float:left;
+            border:1px solid blue;
+        }
+        #c1:hover{
+            transform:scalex(2);
+        }
+        #c2{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(133, 32, 86);
+            float:left;
+            border:1px solid blue;
+        }
+        #c2:hover{
+            transform:scaley(2);
+        }
+        #d{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(15, 144, 101);
+            float:left;
+            border:1px solid blue;
+        }
+        #d:hover{
+            transform:skew(30deg, 10deg);
+        }
+        #d1{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(154, 180, 239);
+            float:left;
+            border:1px solid blue;
+        }
+        #d1:hover{
+            transform:skewx(30deg);
+        }
+        #d2{
+            height: 350px;
+            width: 250px;
+            background-color:rgb(226, 236, 20);
+            float:left;
+            border:1px solid blue;
+        }
+        #d2:hover{
+            transform:skewy(30deg);
+        }
+        #e{
+            height: 350px;
+            width: 250px;
+            background-color:violet;
+            float:left;
+            border:1px solid blue;
+        }
+        #e:hover{
+            transform:matrix(1,-0.3,0,2,0,0);
+        }
+        @media screen and (max-width:503px){
+            #a,#a1,#a2,#b,#b1,#b2,#c,#c1,#c2,#d,#d1,#d2,#e{
+                width: 100%;
+            }
+        }
+        @media screen and (min-width:503px) and (max-width:755px){
+            #a,#a1,#a2,#b,#b1,#b2,#c,#c1,#c2,#d,#d1,#d2,#e{
+                width: 49%;
+            }
+        }
+        @media screen and (min-width:755px) and (max-width:1006px){
+            #a,#a1,#a2,#b,#b1,#b2,#c,#c1,#c2,#d,#d1,#d2,#e{
+                width: 32%;
+            }
+        }
+        @media screen and (min-width:1006px) and (max-width:1258px){
+            #a,#a1,#a2,#b,#b1,#b2,#c,#c1,#c2,#d,#d1,#d2,#e{
+                width: 24%;
+            }
+        }
+        @media screen and (min-width:1258px) and (max-width:1509px){
+            #a,#a1,#a2,#b,#b1,#b2,#c,#c1,#c2,#d,#d1,#d2,#e{
+                width: 19%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="h">Transform Properties in CSS</h1>
+        <hr>
+        <div id="a">Translate()</div>
+        <div id="a1">TranslateX()</div>
+        <div id="a2">TranslateY()</div>
+        <div id="b">rotate()</div>
+        <div id="b1">rotateX()</div>
+        <div id="b2">rotateY()</div>
+        <div id="c">scale()</div>
+        <div id="c1">scaleX()</div>
+        <div id="c2">scaleY()</div>
+        <div id="d">skew</div>
+        <div id="d1">skewX</div>
+        <div id="d2">skewY</div>
+        <div id="e">matrix</div>
+</body>
+</html>
