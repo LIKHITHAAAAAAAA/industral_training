@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6_bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script src="../bootstrap/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #img1{
+            float: right; 
+            height: 50px; 
+            width: 50px; 
+            border-radius: 100px;
+        }
+        .card{
+            width: 21rem; 
+            position: relative; 
+            bottom:60px;
+            margin:0px 20px 0px 20px;
+        }
+        #img2{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+        }
+        #img3{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            position: relative;
+            right:30px;
+        }
+        #img4{
+            height: 50px;
+            width: 50px;
+            border-radius: 100px;
+            position: relative;
+            right:60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: rgb(222, 219, 219);">
+        <div class="row" style="padding: 15px 0px 15px 0px;">
+            <div class="col-md-1"><i class="fa-solid fa-list"></i></div>
+            <div class="col-md-7"><label>
+                <input type="text" placeholder="search">
+            </label></div>
+            <div class="col-md-4"><img src="../pictures/emp1.jpg" id="img1"></div>
+        </div>
+        <div class="row bg-primary" style="padding: 30px 0px 80px 0px;">
+            <div class="col-md-10" style="color: azure;">Projects</div>
+            <div class="col-md-2"><a href="#" class="btn bg-white">Go somewhere</a></div>
+        </div>
+        <div class="row">
+            <div class="card">
+                <div class="card-body bg-white">
+                    <i class="fa-solid fa-briefcase"  style="float: right;"></i>
+                  <h5 class="card-title">Projects</h5>
+                  <h2 class="card-title">18</h2>
+                  <h5 class="card-title">2 completed</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img src="">
+                <div class="card-body bg-white">
+                  <i class="fa-solid fa-list" style="float: right;"></i> 
+                  <h5 class="card-title">Active Task</h5>
+                  <h2 class="card-title">132</h2>
+                  <h5 class="card-title">28 completed</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="">
+                <div class="card-body bg-white">
+                  <i class="fa-solid fa-users" style="float: right;"></i> 
+                  <h5 class="card-title">Teams</h5>
+                  <h2 class="card-title">12</h2>
+                  <h5 class="card-title">1 completed</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="">
+                <div class="card-body bg-white">
+                  <i class="fa-solid fa-gear" style="float: right;"></i>
+                  <h5 class="card-title">Productivity</h5>
+                  <h2 class="card-title">76%</h2>
+                  <h5 class="card-title">5% completed</h5>
+                </div>
+              </div>
+        </div>
+        <div class="card" style="width: 93rem; margin:20px 0px 0px 15px;">
+            <div class="card-header">Active Projects</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4">PROJECT NAME</div>
+                    <div class="col-md-2">HOURS</div>
+                    <div class="col-md-2">PRORITY</div>
+                    <div class="col-md-2">MEMBERS</div>
+                    <div class="col-md-2">PROGRESS</div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4"><i class="fa-brands fa-dropbox" style="color: #3b82fc;"></i>Dropbox Design System</div>
+                    <div class="col-md-2">34</div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <img src="../pictures/emp1.jpg" id="img2">
+                        <img src="../pictures/emp2.jpg" id="img3">
+                        <img src="../pictures/emp3.jpg" id="img4">
+                    </div>
+                    <div class="col-md-2">
+                        15%<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4"><i class="fa-brands fa-slack" style="color: #f00054;"></i>Slack Team UI Design</div>
+                    <div class="col-md-2">47</div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <img src="../pictures/emp3.jpg" id="img2">
+                        <img src="../pictures/emp2.jpg" id="img3">
+                        <img src="../pictures/emp1.jpg" id="img4">
+                    </div>
+                    <div class="col-md-2">
+                        35%<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 35%"></div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4"><i class="fa-brands fa-github"></i>GitHub Satellite</div>
+                    <div class="col-md-2">120</div>
+                    <div class="col-md-2"><a href="#" class="btn btn-info">Low</a></div>
+                    <div class="col-md-2">
+                        <img src="../pictures/emp2.jpg" id="img2">
+                        <img src="../pictures/emp1.jpg" id="img3">
+                        <img src="../pictures/emp3.jpg" id="img4">
+                    </div>
+                    <div class="col-md-2">
+                        75%<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4"><i class="fa-regular fa-layer-group"></i>3D Character Modelling</div>
+                    <div class="col-md-2">89</div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <img src="../pictures/emp1.jpg" id="img2">
+                        <img src="../pictures/emp3.jpg" id="img3">
+                        <img src="../pictures/emp2.jpg" id="img4">
+                    </div>
+                    <div class="col-md-2">
+                        63%<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 63%"></div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                    <div class="col-md-4"><i class="fa-solid fa-staff-snake"></i>Webapp Design System</div>
+                    <div class="col-md-2">108</div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <img src="../pictures/emp2.jpg" id="img2">
+                        <img src="../pictures/emp3.jpg" id="img3">
+                        <img src="../pictures/emp1.jpg" id="img4">
+                    </div>
+                    <div class="col-md-2">
+                        100%<div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar bg-primary" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
