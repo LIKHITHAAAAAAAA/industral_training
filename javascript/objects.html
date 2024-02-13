@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in Js</title>
+</head>
+<body>
+    <h1>Objects in JavaScript</h1>
+    <hr>
+    <script>
+        let users={
+            name:'Likhitha',
+            id:41,
+            college:'aditya'
+        }
+        console.log(users)
+        console.log(users.id)//dot notation
+        console.log(users['name'])//array notation
+        users.name='Likki'
+        console.log(users.name)
+        users.age=18
+        console.log(users.age)
+        delete users.age
+        console.log(users)
+        console.log('name' in users)
+        console.log('age' in users)
+    </script>
+</body>
+</html>
