@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce function</title>
+</head>
+<body>
+    <h1>reduce function in array methods</h1>
+    <script type="text/javascript">
+        let nums=[7,90,8];
+        //nums.reduce(function(acc,ele,i,arr))
+        let sum=nums.reduce(function(acc,ele){
+            return acc+ele
+        },0);
+        console.log(sum);
+        //to find max value
+        let max=nums.reduce((acc,ele)=>{
+            if (acc>ele){
+                return acc;
+            }
+            else{
+                return ele;
+            }
+        },nums[0]);
+        console.log(max)
+    </script>
+</body>
+</html>

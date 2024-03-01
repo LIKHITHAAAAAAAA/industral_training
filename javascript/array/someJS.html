@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some method</title>
+</head>
+<body>
+    <h2>some Method</h2>
+    <P>If the condition is true then it returns true otherwise it returns false</P>
+    <script>
+        let trainees=['likki@gmail.com','hari@gmail.com','prasanna@gmail.com'];
+        //arrow function
+        let email_check=trainees.some((email,i,arr)=>{
+            return email=='likki@gmail.com';
+        })
+        console.log(email_check)
+
+        //anonomous function
+        let emailCheck=trainees.some(function(email,i,arr){
+            return email=='hari@gmail.com';
+        })
+        console.log(emailCheck)
+
+        //named function
+        let emailchek=trainees.some(check);
+        function check(email,i,arr){
+            return email=='prsanna1@gmail.com';
+        }
+        console.log(emailchek)
+    </script>
+</body>
+</html>

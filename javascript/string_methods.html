@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods in JS</title>
+</head>
+<body>
+    <h1>String methods in JS</h1>
+    <hr>
+    <script>
+        function StrMethods(str_name){
+            document.write(str_name+'<br>');
+        }
+        let str='aditya engg college';
+        let str1='aec';
+        let str2='acet';
+
+        StrMethods('original string:'+str);
+        StrMethods('string length:'+str.length);
+        StrMethods('Char At:'+str.charAt(5));
+        StrMethods('index of:'+str.indexOf('a'));
+        StrMethods('last index of:'+str.lastIndexOf('a'));
+        let str3='ADITYA';
+        StrMethods('to lower case:'+str3.toLowerCase());
+        StrMethods('to upper case:'+str.toUpperCase());
+        StrMethods('string concate:'+str.concat(str1));
+        StrMethods('string concate:'+str.concat(str1,str2));
+        StrMethods('string trim:'+str.trim());
+        StrMethods('startswith of string:'+str.startsWith('a'));
+        StrMethods('endswith of string:'+str.endsWith('c'));
+        let newstr='hari-likki-rajini';
+        console.log(newstr.split("-"));
+        console.log(str1.split(""));
+        StrMethods('slice of string:'+str.slice(0,7));
+        StrMethods('slice of string:'+str.slice(13,17));
+        StrMethods('slice of string:'+str.slice(-7));
+        StrMethods('slice of string:'+str.slice(-7,-4));
+        StrMethods('substring of string:'+str.substring(7,11));
+        StrMethods('substr of string:'+str.substr(5,7));
+        StrMethods('includes of string:'+str.includes('college'));
+        StrMethods('repeat of string:'+str2.repeat(2));
+        StrMethods('replace of string:'+str.replace('adtya','sri aditya'));
+    </script>
+</body>
+</html>

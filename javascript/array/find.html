@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find method</title>
+</head>
+<body>
+    <h2>find Method</h2>
+    <hr>
+    <script>
+        let courses=['html','css','bootstrap','js'];
+        //arrow function
+        let getcourse=courses.find((course,index)=>{
+            return course.startsWith('b');
+        })
+        console.log(getcourse)
+
+        //anonoumous function
+        let getcourses=courses.find(function(course,index){
+            return course.endsWith('s');
+        })
+        console.log(getcourses)
+        
+        //named function
+        let findcourse=courses.find(myCourses);
+        function myCourses(course,index){
+            return course.startsWith('h');
+        }
+        console.log(findcourse)
+    </script>
+</body>
+</html>

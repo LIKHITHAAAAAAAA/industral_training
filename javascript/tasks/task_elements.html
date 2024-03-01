@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colleges</title>
+</head>
+<body>
+    <h2>Colleges</h2>
+    <ul>
+        <li>AEC</li>
+        <li>ACET</li>
+        <li>ACOE</li>
+    </ul>
+    <script>
+        const Tagname=document.getElementsByTagName('li');
+        Tagname[0].innerHTML='<b>Aditya Engineering College</b>'
+        Tagname[1].innerHTML='<b>Aditya College of Engineering & Technology</b>'
+        Tagname[2].innerText='Aditya College of Engineering'
+        Tagname[0].style.backgroundColor='pink'
+        Tagname[1].style.border='2px solid blue'
+        Tagname[2].style.fontFamily='Arial'
+        console.log(Tagname)
+    </script>
+</body>
+</html>

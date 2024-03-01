@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2>Array methods in JS</h2>
+    <ul>
+        <li>push</li>
+        <li>pop</li>
+        <li>push</li>
+        <li>shift</li>
+        <li>unshift</li>
+        <li>concat</li>
+        <li>slice</li>
+        <li>splice</li>
+        <li>indexOf</li>
+        <li>sort</li>
+    </ul>
+    <script>
+        let branch=['cme','ccn','ece'];
+        console.log(branch);
+        branch.push('eee');
+        console.log(branch);
+        branch.pop();
+        console.log(branch);
+        branch.shift();
+        console.log(branch);
+        branch.unshift('ece');
+        console.log(branch);
+        //concat is used to add to arrays
+        let fruits=['banana','apple','cherry','dates'];
+        let veg=['carrot','tomato','potato'];
+        let combine=fruits.concat(veg);
+        console.log(combine);
+    
+        let newArr=combine.slice(2,5)
+        console.log(newArr);
+
+        combine.splice(2,2,'kiwi','grapes');
+        console.log(combine);
+
+        //to find the index position of element
+        let arr1=combine.indexOf('kiwi');
+        console.log(arr1);
+
+        //to sort the elements
+        let fruits1=['cherry','banana','apple','dates'];
+        let fru=fruits1.sort();
+        console.log(fru);
+    </script>
+</body>
+</html>

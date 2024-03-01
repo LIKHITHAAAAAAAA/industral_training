@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tsak1_querylist</title>
+</head>
+<body>
+    <h2 id="head">This is heading1</h2>
+    <h2 id="head">This is heading2</h2>
+    <h3 class="new">Heading1</h3>
+    <h3 class="new">Heading2</h3>
+    <P>Para1</P>
+    <P>Para1</P>
+    <script>
+        let nodelist=document.querySelectorAll("#head,.new,p");
+        for(let i=0;i<nodelist.length;i++)
+        {
+            nodelist[i].style.backgroundColor='aqua'
+        }
+    </script>
+</body>
+</html>

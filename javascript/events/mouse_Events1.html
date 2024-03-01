@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse Events</title>
+</head>
+<body>
+    <button onclick="sample()">Click me</button>
+    <br>
+    <p id="sp_id"></p>
+    <script>
+        function sample(){
+            document.body.style.backgroundColor="aqua"
+            document.getElementById("sp_id").innerText="This is a onclick event in javascript."
+        }
+    </script>
+    <button onmouseenter="alert('This is a mouseenter event in JS')">Click</button>
+</body>
+</html>

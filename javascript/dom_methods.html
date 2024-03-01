@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods in JS</title>
+</head>
+<body>
+    <h1 id="e_id">Heading</h1>
+    <span class="sp">This is span1</span>
+    <span class="sp">This is span2</span>
+    <P>This is a Para1</P>
+    <P>This is a Para2</P>
+    <P>This is a Para3</P>
+    <h2 id="heads">This is heading tag1</h2>
+    <h2 id="heads">This is heading tag2</h2>
+    <h3 class="new">Heading3</h3>
+    <h3 class="new">Heading4</h3>
+    <span>This is a spantag1</span>
+    <br>
+    <span>This is a spantag1</span>
+    <br>
+    <a id="My_anchor">Click here</a>
+    <script>
+        console.log(document)
+        console.log(document.head)
+        console.log(document.body)
+        //by using id
+        const Byid=document.getElementById('e_id');
+        Byid.style.color='blue'
+        Byid.style.fontSize='30px'
+        console.log(Byid)
+
+        //by using class
+        const ClsID=document.getElementsByClassName('sp');
+        ClsID[1].style.color='pink'
+        console.log(ClsID)
+
+        //by using tagname
+        const Tagname=document.getElementsByTagName('p');
+        Tagname[0].style.fontSize='30px'
+        console.log(Tagname)
+
+        //query selector('#id,.class,tag')
+        const qs=document.querySelector("p")
+        qs.style.backgroundColor='blue'
+        console.log(qs)
+        document.querySelector("#e_id").style.backgroundColor='pink'
+        document.querySelector(".sp").style.border='2px solid red'
+
+        //query selector all
+        let heads=document.querySelectorAll("#heads");
+        heads[0].style.backgroundColor='yellow'
+        heads[1].style.backgroundColor='yellow'
+        console.log(heads)
+        let cls=document.querySelectorAll(".new");
+        cls[0].style.border='1px solid brown'
+        cls[1].style.border='1px solid brown'
+        console.log(cls)
+        let element=document.querySelectorAll("span");
+        element[0].style.fontSize='30px'
+        element[1].style.fontSize='30px'
+
+        //set attribute method
+        MyAnch=document.getElementById("My_anchor");
+        MyAnch.setAttribute("href","#")
+        MyAnch.setAttribute("target","_blank")
+
+        
+    </script>
+</body>
+</html>

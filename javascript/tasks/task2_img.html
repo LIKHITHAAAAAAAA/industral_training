@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <img src="../../pictures/adityalogo.png" id="img1">
+    <script>
+        const MyImg=document.getElementById("img1")
+        MyImg.style.cssText=`height:100px;
+                             width:100px;`
+        const NewBtn=document.createElement("button");
+        NewBtn.setAttribute("id","btn_id");
+        NewBtn.innerText='Click me'
+
+        //append Element
+        const bdy=document.body
+        bdy.appendChild(NewBtn)
+
+        //event listerners
+        const btn=document.getElementById("btn_id");
+        btn.addEventListener("click",MyFunc1)
+        function MyFunc1(){
+            let img=document.getElementById("img1")
+            img.setAttribute("src","../../pictures/a1.png")
+        }
+    </script>
+</body>
+</html>

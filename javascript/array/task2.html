@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <h1>Array of Objects</h1>
+    <hr>
+    <table border="2px solid">
+        <tr>
+            <th>name</th>
+            <th>college</th>
+            <th>pinno</th>
+            <tbody id="tbdy">
+
+            </tbody>
+        </tr>
+    </table>
+    <script>
+        let obj=[
+            {
+                name:'Likhitha',
+                college:'aec',
+                pin_no:41,
+            },
+            {
+                name:'Prasanna',
+                college:'acet',
+                pin_no:16,
+            },
+            {
+                name:'Hari',
+                college:'aec',
+                pin_no:2,
+            },
+            {
+                name:'Jaya',
+                college:'aeoc',
+                pin_no:26,
+            },
+            {
+                name:'Harika',
+                college:'aec',
+                pin_no:20,
+            },
+            {
+                name:'Likhi',
+                college:'aeoc',
+                pin_no:2,
+            },
+            {
+                name:'Devi',
+                college:'acet',
+                pin_no:30,
+            },
+        ];
+        console.log(obj)
+        let clg=obj.filter(function(a,b,c){
+            return a['college']=='acet'
+        });
+        for(i=0;i<=clg.length;i++){
+            var row = document.createElement("tr")
+                var cell= [clg[i].name,clg[i].college,clg[i].pin_no]
+                for(let k=0;k<cell.length;k++){
+                    var col=document.createElement("td")
+                    col.innerText=cell[k]
+                    console.log(col)
+                    row.appendChild(col)
+                }
+            const bdy=document.getElementById("tbdy")
+            bdy.appendChild(row)
+        }
+    </script>
+</body>
+</html>

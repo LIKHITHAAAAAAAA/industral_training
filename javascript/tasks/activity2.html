@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stirng methods in JS</title>
+</head>
+<body>
+    <h2>String methods in Javascript</h2>
+    <hr>
+    <script>
+        function StrMethods(str_name){
+            document.write(str_name+'<br><br>');
+        }
+        let str1='technical hub';
+        let str2='aditya';
+        let str3='COLLEGE';
+        let a=10;
+        let str4='hub';
+        StrMethods("substr of the sting:"+str1.substr(9,11));
+        StrMethods("substring of the sting:"+str1.substring(0,9));
+        StrMethods("sting replace:"+str1.replace('technical hub','T-hub'));
+        StrMethods("search of sting:"+str1.search('technical'));
+        StrMethods("toLocaleLowerCase:"+str3.toLocaleLowerCase());
+        StrMethods("toLocaleUpperCase:"+str2.toLocaleUpperCase());
+        StrMethods("indexOf:"+str1.indexOf('h'));
+        StrMethods("includes:"+str1.includes('hub'));
+        StrMethods("slice:"+str1.slice(0,4));
+        StrMethods("string concat:"+str2.concat(str3));
+        StrMethods("lastIndexOf:"+str1.lastIndexOf('h'));
+        StrMethods("charCodeAt:"+str1.charCodeAt(6));
+        StrMethods("trim:"+str1.trim());
+        StrMethods("charAt:"+str1.charAt(4));
+        StrMethods("valueOf:"+str3.valueOf());
+        let newstr='vyshu-rani-deepthi';
+        StrMethods(newstr.split("-"));
+        StrMethods("toString:"+a.toString());
+        StrMethods("match:"+str1.match(str4));
+    </script>
+</body>
+</html>

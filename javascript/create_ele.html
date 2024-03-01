@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create element in JS</title>
+</head>
+<body>
+    <h2>Create Elements using JS</h2>
+    <span id="dis_dt"></span>
+    <script>
+        const NewBtn=document.createElement("button");
+        NewBtn.setAttribute("id","btn_id");
+        const NewDiv=document.createElement("div");
+        NewBtn.innerText='Click me'
+        NewDiv.innerHTML="<h1>This is a new division</h1>"
+        NewDiv.style.cssText=`height:200px;
+                              width:200px;
+                              color:red;
+                              padding:'5px';
+                              background-Color:skyblue;
+                              border-radius:30px;
+                              border:1px solid blue;`
+
+        //append Element
+        const bdy=document.body
+        bdy.appendChild(NewBtn)
+        bdy.appendChild(NewDiv)
+
+        //event listerners
+        const btn=document.getElementById("btn_id");
+        btn.addEventListener("mouseover",MyFunc1)
+        btn.addEventListener("mouseout",MyFunc2)
+        btn.addEventListener("click",MyFunc3)
+        function MyFunc1(){
+            NewDiv.style.backgroundColor="brown"
+        }
+        function MyFunc2(){
+            bdy.style.backgroundColor="skyblue"
+        }
+        function MyFunc3(){
+            const date=document.getElementById("dis_dt");
+            document.write(date);
+        }
+    </script>
+</body>
+</html>
