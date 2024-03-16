@@ -6,7 +6,7 @@
     <title>Task3</title>
 </head>
 <body>
-    <input type="text" id="id_input" placeholder="Enter starting letter" onkeypress="get(this.value)">
+    <input type="text" id="id_input" placeholder="Enter starting letter" onkeypress="get(this.value)" >
     <button onclick="button_func()">Find</button>
     <p id="p_id"></p>
     <script>
@@ -15,6 +15,7 @@
             let var1=document.getElementById("id_input").value;
             let find_name=arr.find(function(ele,ind){
                 return ele.startsWith(var1)
+                
         })
         console.log(find_name)
             document.getElementById("p_id").innerHTML=find_name

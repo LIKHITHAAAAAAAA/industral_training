@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"integrity= "sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script> 
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"integrity= "sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="crossorigin="anonymous"
+		referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    .a{
+        height:300px;
+        width:400px;
+        outline:1px solid;
+        margin-left: 500px;
+        margin-top: 100px;
+    }
+    .a1{
+        height: 60px;
+    }
+    #a11{
+        height: 55px;
+        width: 295px;
+        outline: 1px solid gray;
+        float: left;
+    }
+    .b1{
+        width: 95px;
+        height: 55px;
+        background-color: rgb(93, 226, 182);
+        float: left;
+        font-size: 20px;
+    }
+    .b2{
+        width: 95px;
+        height: 55px;
+        background-color: rgb(93, 226, 182);
+        float: left;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    #in{
+        height: 55px;
+        width: 295px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <div class="a">
+        <div class="a1">
+            <div id="a11">
+                <input type="text" id="in" onkeypress="get(this.value)">
+            </div>
+            <div>
+                <button onclick="clr()" class="b2">c</button>
+            </div>
+        </div>
+        <div class="a1">
+            <div><button onclick="num1('1')" class="b1">1</button></div>
+            <div><button onclick="num1('2')" class="b2">2</button></div>
+            <div><button onclick="num1('3')" class="b2">3</button></div>
+            <div><button onclick="num1('/')" class="b2">/</button></div>
+            
+        </div>
+        <div class="a1">
+            <div><button onclick="num1('4')" class="b1">4</button></div>
+            <div><button onclick="num1('5')" class="b2">5</button></div>
+            <div><button onclick="num1('6')" class="b2">6</button></div>
+            <div><button onclick="num1('*')" class="b2">*</button></div>
+        </div>
+        <div class="a1">
+            <div><button onclick="num1('7')" class="b1">7</button></div>
+            <div><button onclick="num1('8')" class="b2">8</button></div>
+            <div><button onclick="num1('9')" class="b2">9</button></div>
+            <div><button onclick="num1('-')" class="b2">-</button></div>
+        </div>
+        <div class="a1">
+            <div><button onclick="num1('0')" class="b1">0</button></div>
+            <div><button onclick="num1('.')" class="b2">.</button></div>
+            <div><button onclick="equal()" class="b2">=</button></div>
+            <div><button onclick="num1('+')" class="b2">+</button></div>
+        </div>
+    </div>
+    <script>
+        let btn1=document.getElementsByClassName("b1");
+        let btn2=document.getElementsByClassName("b2");
+        function num1(val){
+            var1=document.getElementById("in").value+=val;
+        }
+        function equal() { 
+			let x = document.getElementById("in").value 
+			let y = math.evaluate(x) 
+			document.getElementById("in").value = y 
+		} 
+        function clr(){
+            document.getElementById("in").value='';
+        }
+    </script>
+</body>
+</html>

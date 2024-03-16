@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+</head>
+<style>
+    img{
+        height: 300px;
+        width: 300px;
+    }
+    p{
+        text-align: center;
+    }
+    div{
+        height: 20px;
+        width: 20px;
+        border-radius: 100px;
+        background-color: rgb(176, 173, 173);
+        float: left;
+    }
+    #div1{
+        margin-left: 730px;
+    }
+    #div2{
+        margin-left: 15px;
+    }
+    #div3{
+        margin-left: 15px;
+    }
+</style>
+<body>
+    <p id="p-id"></p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <script>
+        setTimeout(test,1000)
+        function test(){
+            document.getElementById("p-id").innerHTML='<img src="../../pictures/adityalogo.png">'
+            document.getElementById("div1").style.backgroundColor='gray';
+            document.getElementById("div3").style.backgroundColor='lightgray';
+            setTimeout(test1,2000)
+        }
+        function test1(){
+            document.getElementById("p-id").innerHTML='<img src="../../pictures/background.jpg">'
+            document.getElementById("div2").style.backgroundColor='gray';
+            document.getElementById("div1").style.backgroundColor='lightgray';
+            setTimeout(test2,2000)
+        }
+        function test2(){
+            document.getElementById("p-id").innerHTML='<img src="../../pictures/thublogo.png">'
+            document.getElementById("div3").style.backgroundColor='gray';
+            document.getElementById("div2").style.backgroundColor='lightgray';
+            setTimeout(test,2000)
+        }
+    </script>
+</body>
+</html>
